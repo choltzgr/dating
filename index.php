@@ -12,7 +12,9 @@ $f3 = Base::instance();
 //define a default route
 $f3->route('GET /', function()
 {
-    echo "Dating Website";
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 //run fat-free
